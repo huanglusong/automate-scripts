@@ -1,0 +1,26 @@
+{
+  "name": "automate-scripts",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "编写用于自动化操作的脚本，如各种app的签到等",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huanglusong/automate-scripts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huanglusong/automate-scripts/issues"
+  },
+  "homepage": "https://github.com/huanglusong/automate-scripts#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "chalk": "^5.0.1",
+    "conf": "^10.1.2",
+    "moment": "^2.29.3"
+  }
+}
