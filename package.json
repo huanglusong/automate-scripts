@@ -20,7 +20,7 @@
   "dependencies": {
     "axios": "^0.27.2",
     "chalk": "^5.0.1",
-    "conf": "^10.1.2",
+    "crypto-js": "^4.1.1",
     "moment": "^2.29.3"
   }
 }

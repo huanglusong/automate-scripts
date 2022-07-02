@@ -1,9 +1,12 @@
 // 通知工具类 支持通过企业微信机器人发送通知
 import {getQYWXAccessToken, sendByQYWXAM} from "../api/notify.js";
-import conf from "../config/config.js";
+import config from "../config.js";
 
 export async function notifyByQYWXAM(head, content) {
-    let qywxToken = conf.get('notify.qywx');
+    if (!config.notify.qywx.open) {
+        return;
+    }
+    let qywxToken = config.notify.qywx.token;
     if (!qywxToken) {
         console.log('未配置企业微信token信息！')
         throw new Error('未配置企业微信token信息');

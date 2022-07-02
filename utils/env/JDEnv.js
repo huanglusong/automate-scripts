@@ -1,4 +1,4 @@
-import config from '../../config/config.js'
+import config from '../../config.js'
 import {totalBean} from "../../api/jd.js";
 import BaseEnv from "./BaseEnv.js";
 
@@ -12,7 +12,7 @@ export default class JDEnv extends BaseEnv {
 
 
     async init() {
-        this.cookie = config.get('jd.cookie');
+        this.cookie = config.jd.cookie;
         await totalBean(this.cookie).then(resp => {
             let data = resp.data;
             if (data['retcode'] === "1001") {

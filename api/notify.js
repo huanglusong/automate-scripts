@@ -1,5 +1,5 @@
 // 发送通知相关的api写在此文件下
-import service from "../utils/request.js";
+import service from "../utils/httpclient/request.js";
 
 
 // ------------企业微信通知-------------

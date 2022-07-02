@@ -1,5 +1,5 @@
 // jd相关的api写在此文件下
-import service from "../utils/request.js";
+import service from "../utils/httpclient/request.js";
 
 import USER_AGENT from '../utils/USER_AGENTS.js'
 

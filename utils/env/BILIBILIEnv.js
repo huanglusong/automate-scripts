@@ -1,4 +1,4 @@
-import conf from "../../config/config.js";
+import config from "../../config.js";
 import {getAccountInfo} from "../../api/bilibili.js";
 import BaseEnv from "./BaseEnv.js";
 
@@ -18,10 +18,10 @@ export default class BILIBILIEnv extends BaseEnv {
 
 
     async init() {
-        this.cookie = conf.get('bilibili.cookie');
-        this.likeUpVideo = conf.get('bilibili.likeUpVideo');
-        this.custCoin = conf.get('bilibili.custCoin');
-        this.maxCustCoinNum = conf.get('bilibili.maxCustCoinNum');
+        this.cookie = config.bilibili.cookie;
+        this.likeUpVideo = config.bilibili.likeUpVideo;
+        this.custCoin = config.bilibili.custCoin;
+        this.maxCustCoinNum = config.bilibili.maxCustCoinNum;
         let {data} = await getAccountInfo(this.cookie);
         console.log('获取到的数据是：', data);
         if (data.data && data.data.uname) {
