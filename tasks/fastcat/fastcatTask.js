@@ -29,7 +29,7 @@ async function execute() {
     }
     $.addDetailMsg(`最新视频【${videoList.length}】条`)
     for (let video of videoList) {
-        let videoDetail = await getVideoUrl(video.id);
+        let videoDetail = await getVideoUrl(video.id, $.token);
         let url = videoDetail.data.url;
         $.addDetailMsg(`【视频标题】:${video.name}`);
         $.addDetailMsg(`【视频URL】:\n${url}`);

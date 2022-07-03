@@ -9,7 +9,8 @@ export default {
         "maxCustCoinNum": 2
     },
     "fastcat": {
-        "token": "xxxxxxx"
+        "userName": "xxxxxxx",
+        "password": "xxxxxxx"
     },
     "notify": {
         "qywx": {
