@@ -93,4 +93,13 @@ export default {
 
 #### 定时任务启动
 
-todo 后续补充完善
+定时任务的一个小细节是：`PATH`环境变量默认只加载`/usr/bin`目录，这意味着`node`命令可能找不到，所以如果`node`未安装至`/usr/bin`目录下，需在执行定时任务时激活。
+
+定时任务配置示例：
+
+`crontab -e`
+
+```shell
+0 9 * * * export PATH=$PATH:node安装目录/bin; cd automate-scripts安装目录; node tasks/xxxxTask.js
+```
+

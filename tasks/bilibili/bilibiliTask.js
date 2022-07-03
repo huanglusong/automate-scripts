@@ -110,7 +110,7 @@ async function share() {
     let dynamicList = $.dynamicList;
     for (let item of dynamicList) {
         let videoInfo = item.modules.module_dynamic.major;
-        if (videoInfo.type !== 'MAJOR_TYPE_ARCHIVE') {
+        if (!videoInfo || videoInfo.type !== 'MAJOR_TYPE_ARCHIVE') {
             continue;
         }
         let title = videoInfo.archive.title;
