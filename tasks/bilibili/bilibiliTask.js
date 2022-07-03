@@ -1,3 +1,5 @@
+// cron 0 9 * * * bilibiliTask.js
+// new Env('bilibili日常任务');
 import {
     custCoinVideoAPI,
     getDailyRewardInfo,

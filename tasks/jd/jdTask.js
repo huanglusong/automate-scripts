@@ -1,3 +1,5 @@
+// cron 0 9 * * * jdTask.js
+// new Env('京东日常任务');
 import {jdSignBeanApi} from "../../api/jd.js";
 import JDEnv from '../../utils/env/JDEnv.js'
 
